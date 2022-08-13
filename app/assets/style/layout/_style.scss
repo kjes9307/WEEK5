@@ -1,0 +1,188 @@
+.background{
+    background-color: $bgColor;
+    @include d-flex(center,center)
+}
+.background2{
+    background-color: #FBF2F2;
+    @include d-flex(center,center)
+}
+.container{
+    max-width: 1320px;
+    padding-left: 12px;
+    padding-right: 12px;
+    // border: solid 1px black;
+}
+.header{
+    width: 100%;
+    padding-top: $unitLength*2;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    .navbar{
+        display: flex;
+        align-items: center;
+        & li:not(:first-child){
+            margin-left: $unitLength*8;
+        }
+    }
+    
+    & .logo{
+        background-image: url("../images/logo-new@2x.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 80px;
+        height: 49px;
+        & a{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            display: block;
+            text-indent: 101%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    & a{
+        color: white;
+    }
+    & a:hover{
+        color: #f24;
+    }
+    .toggle-dropdown{
+        display: none;
+    }
+}
+.footer{
+    color: white;
+    width: 100%;
+
+    .title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: $unitLength*6;
+        & ul{
+            display: flex;
+        }
+        & ul li:not(:first-child){
+            margin-left: $unitLength*6;
+        }
+        & img{
+            width: 48px;
+            height: 48px;
+            &:hover{
+                background-color: #f24;
+            }
+        }
+        & img:not(:first-child){
+            margin-left: $unitLength*4;
+        }
+    }
+    .contact{
+        padding-top: $unitLength*3;
+        padding-bottom: $unitLength*4;
+        
+    }
+    .layout{
+        border-bottom: 1px solid #fff;
+    }
+    .info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: $unitLength*4;
+        padding-bottom: $unitLength*4;
+        & ul{
+            display: flex;
+        }
+        & ul li:not(:first-child){
+            margin-left: $unitLength*6;
+        }
+    }
+    & a{
+        color: white;
+    }
+    & a:hover{
+        color: #f24;
+    }
+}
+
+@media(max-width:992px){
+    .container{
+        max-width: 720px;
+    }
+    .footer{
+        .title{
+            & img:not(:first-child){
+                margin-left: $unitLength*2;
+            }  
+            & img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+
+@media(max-width:768px){
+    .icon-size{
+        font-size: 18px !important;
+    }
+    .container{
+        max-width: 372px;
+    }
+    .header{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        & .logo{
+            margin-bottom: 15px;
+            margin-top: 16px;
+        }
+        .navbar{
+            display: none;
+            & li:not(:first-child){
+                margin-left: 0px;
+            }
+        }
+        .toggle-dropdown{
+            display: block;
+            position: relative;
+            width: 70%;
+            text-align: right;
+        }
+    }
+    .footer{
+        .title{
+            padding-top: $unitLength*3;
+            ul{
+                display: none;
+            }
+        }
+        .h3{
+            font-size: $alphaBetSize * 2;
+            line-height: $alphaBetSize * 3;
+        }
+        .info{
+            display: block;
+            width: 100%;
+            & ul{
+                display: block;
+            }
+            & ul li:not(:first-child){
+                margin-left: 0px;
+            }
+        }
+        .layout{
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+}

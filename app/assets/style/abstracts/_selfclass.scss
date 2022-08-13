@@ -1,0 +1,148 @@
+// font-size
+.h1{
+    font-size: $alphaBetSize*8;
+    line-height: $alphaBetSize*12;
+    font-weight: bold;
+    font-family: 'Roboto', 'Noto Sans TC';
+}
+.h2{
+    font-size: $alphaBetSize*6;
+    line-height: $alphaBetSize*9;
+    font-family: 'Roboto', 'Noto Sans TC';
+    font-weight: bold;
+}
+.h3{
+    font-size: $alphaBetSize*4.5;
+    line-height: 54px;
+    font-family: 'Roboto', 'Noto Sans TC';
+    font-weight: 300;
+}
+.h4{
+    font-size:$alphaBetSize*3;
+    line-height: $alphaBetSize*4.5;
+    font-family: 'Roboto', 'Noto Sans TC';
+    font-weight: bold;
+}
+.h5{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Roboto', 'Noto Sans TC';
+    font-weight: 300;
+}
+.h6{
+    font-size: $alphaBetSize*2;
+    line-height: $alphaBetSize*3;
+    font-family: 'Roboto', 'Noto Sans TC';
+    font-weight: 300;
+}
+
+.hr-line{
+    border-top: 1px solid #000;
+}
+
+// space between component
+.ml{
+    margin-left: 10px;
+}
+.mr{
+    margin-right: 6px;
+}
+.mt4{
+    margin-top: 4px;
+}
+.mt8{
+    margin-top: $unitLength;
+}
+.mt12{
+    margin-top: $unitLength*1.5;
+}
+.mt15{
+    margin-top: 15px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mt28{
+    margin-top: 28px;
+}
+.mt68{
+    margin-top: 68px;
+}
+.mt144{
+    margin-top: 144px;
+}
+.mt-2{
+    margin-top: $unitLength*2;
+}
+.mt-5{
+    margin-top: $unitLength*5;
+}
+.mt-6{
+    margin-top: $unitLength*6;
+}
+.mt-7{
+    margin-top: $unitLength*7;
+}
+.ml-0{
+    margin-left: $unitLength;
+}
+.ml-3{
+    margin-left: $unitLength*3;
+}
+.ml-4{
+    margin-left: $unitLength*4;
+}
+.mb-3{
+    margin-bottom: $unitLength*3;
+}
+.mb-4{
+    margin-bottom: $unitLength*4;
+}
+.mb-5{
+    margin-bottom: $unitLength*5;
+}
+.mb-7{
+    margin-bottom: $unitLength*7;
+}
+.mb-9{
+    margin-bottom: $unitLength*9;
+}
+.mb-10{
+    margin-bottom: $unitLength*10;
+}
+.pl-4{
+    padding-left: $unitLength*4;
+}
+.pt-1{
+    padding-top: $unitLength;
+}
+.pt-3{
+    padding-top: $unitLength*3;
+}
+.pt-10{
+    padding-top: $unitLength*10;
+}
+.pb-4{
+    padding-bottom: $unitLength*4;
+}
+.pb-5{
+    padding-bottom: $unitLength*5;
+}
+.pb-6{
+    padding-bottom: $unitLength*6;
+}
+@mixin d-flex($rowAdjust,$colAdjust){
+    display: flex;
+    justify-content: $rowAdjust;
+    align-items: $colAdjust;
+}
+
+.flex-center-center{
+    @include d-flex(center,center );
+}
+.w-100{
+    width: 100%;
+}
+.border-fix{
+    border-bottom: 1px solid #dee2e6;
+}
