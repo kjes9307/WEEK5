@@ -204,11 +204,50 @@ a {
           align-items: center;
 }
 
-.w-100 {
-  width: 100%;
-}
-
 .border-fix {
   border-bottom: 1px solid #dee2e6;
+}
+
+.logo {
+  background-image: url("../images/andychen.jpeg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.logo-1 {
+  background-image: url("../images/emilywang.jpeg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.info {
+  width: 90%;
+}
+
+.user {
+  bottom: 32px;
+  left: 32px;
+}
+
+.user-info {
+  margin-left: 10px;
+}
+
+.h-800 {
+  height: 800px;
+  padding: 32px;
+}
+
+.padding-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 /*# sourceMappingURL=index.css.map */
