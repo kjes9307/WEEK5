@@ -109,3 +109,29 @@
     padding-top: 0px;
     padding-bottom: 0px;
 }
+
+.arrow-down{
+    display: none !important;
+  }
+.arrow-up{
+    display: inline-block !important;
+}
+
+.collapsed{
+    .arrow-down{
+        display: inline-block !important;
+    }
+    .arrow-up {
+        display: none !important;
+    }
+}
+.nav-toggle-active{
+    &::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    border-left: 4px solid #198754;
+    }
+  }
