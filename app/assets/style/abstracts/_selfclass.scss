@@ -7,18 +7,14 @@
     font-weight: 900;
 }
 
-.fontsize-2{
-    font-size: $alphaBetSize*2;
-    line-height: $alphaBetSize*3;
+body{
     font-family: 'Lato', 'Roboto Mono';
-    font-weight: 900 !important;
 }
 
 .fontsize-3{
     font-size: 14px;
     line-height: 21px;
     font-family: 'Lato', 'Roboto Mono';
-    font-weight: bold;
 }
 .fontsize-4{
     font-size: 12px;
@@ -63,6 +59,10 @@
 .padding-y-32{
     padding-top: 32px !important;
     padding-bottom: 32px !important;
+}
+.padding-x-32{
+    padding-left: 32px !important;
+    padding-right: 32px !important;
 }
 .padding-r-32{
     padding-right: 32px !important;
@@ -165,6 +165,3 @@ tbody{
         line-height: 24px !important;
     }
 }
-.pagination-color{
-    color: $green !important;
-  }
