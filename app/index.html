@@ -88,7 +88,7 @@
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade" id="Dashboard" role="tabpanel" aria-labelledby="nav-monitoring">Dashboard</div>
                 <div class="tab-pane fade" id="Question" role="tabpanel" aria-labelledby="nav-chat">Question</div>
-                <div class="tab-pane fade show active" id="Assignment" role="tabpanel" aria-labelledby="nav-assignment_add">
+                <div class="tab-pane fade " id="Assignment" role="tabpanel" aria-labelledby="nav-assignment_add">
                   <nav class="navbar navbar-expand-lg navbar-light bg-white mb12 padding-y-32">
                       <div class="container-fluid pe-0 ">
                         <h1 class="fontsize-1 mb-0"><a href="#" class="text-dark">Assignment</a></h1>
@@ -308,7 +308,326 @@
                   </div>
                 </div>
                 <div class="tab-pane fade" id="Course" role="tabpanel" aria-labelledby="nav-Course">Course</div>
-                <div class="tab-pane fade" id="Admin" role="tabpanel" aria-labelledby="nav-Admin">Admin</div>
+                <div class="tab-pane fade show active" id="Admin" role="tabpanel" aria-labelledby="nav-Admin">
+                  <nav class="navbar navbar-expand-lg navbar-light bg-white padding-y-32">
+                    <div class="container-fluid pe-0 ">
+                      <h1 class="fontsize-1 mb-0"><a href="#" class="text-dark">Admin</a></h1>
+                      
+                      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml50">
+                          
+                          <li data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="nav-item d-flex align-items-center justify-content-center">
+                            <span class="material-symbols-rounded">
+                              add
+                              </span>
+                            <a class="nav-link fontsize-2 text-dark" href="#" >
+                               Add New Admin
+                            </a>
+                          </li>
+                        </ul>
+                        <span class="material-symbols-rounded">
+                          search
+                          </span>
+                        <span class="material-symbols-rounded ms-4">
+                            notifications
+                        </span>
+                      </div>
+                      
+                    </div>
+                  </nav>
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header border-bottom-0">
+                          <h3 class="modal-title" id="staticBackdropLabel">New Admin</h3>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <h5>Account</h5>
+                          <form>
+                            <div class="mb-3">
+                              <label for="exampleInputName" class="form-label">Name</label>
+                              <input type="email" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail" class="form-label">Email</label>
+                              <input type="password" class="form-control" id="exampleInputEmail">
+                            </div>
+                          </form>
+                          <hr class="dropdown-divider mb-3">
+
+                          <h5>Verification</h5>
+                          <h6 class="d-flex align-items-center"><span class="material-symbols-rounded text-danger">
+                            warning
+                          </span>Unverified</h6>
+                          <button type="button" class="btn btn-outline-success w-100">Success</button>
+                          <hr class="dropdown-divider mb-3">
+                          <h5>Access Level</h5>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <hr class="dropdown-divider mb-3">
+                          <h5>Custom Access</h5>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Lecture" >
+                            <label class="form-check-label" for="Lecture">
+                              Lecture
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Coupon">
+                            <label class="form-check-label" for="Coupon">
+                              Coupon
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Message">
+                            <label class="form-check-label" for="Message">
+                              Message
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Setting">
+                            <label class="form-check-label" for="Setting">
+                              Setting
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Task Menu">
+                            <label class="form-check-label" for="Task Menu">
+                              Task Menu
+                            </label>
+                          </div>
+                        </div>
+                        <div class="modal-footer border-top-0">
+                          <button type="button" class="btn btn-outline-success btn-lg" data-bs-dismiss="modal">Cancel</button>
+                          <button type="button" class="btn btn-success btn-lg">Add</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-fluid pe-0">
+                    <table class="table table-hover m-0 mb63">
+                      <thead>
+                        <tr>
+                          <th scope="col" >ID</th>
+                          <th scope="col" >Name</th>
+                          <th scope="col" >Email</th>
+                          <th scope="col" >Verified</th>
+                          <th scope="col" ></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="fs-6 lh-base p-3">
+                          <th scope="row">#1</th>
+                          <td>Emir Wicks</td>
+                          <td>emir.wicks@mail.com</td>
+                          <td>Yes</td>
+                          <td>
+                            <span class="material-symbols-rounded" data-bs-toggle="modal" data-bs-target="#tr1">
+                            visibility
+                            </span>
+                            <span class="material-symbols-rounded">
+                              edit
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">#2</th>
+                          <td>Zaina Goldsmith</td>
+                          <td>zaina.goldsmith@mail.com</td>
+                          <td>Yes</td>
+                          <td>
+                            <span class="material-symbols-rounded">
+                            visibility
+                            </span>
+                            <span class="material-symbols-rounded">
+                              edit
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">#3</th>
+                          <td>Mahima Lopez</td>
+                          <td>zaina.goldsmith@mail.com</td>
+                          <td>Yes</td>
+                          <td>
+                            <span class="material-symbols-rounded">
+                            visibility
+                            </span>
+                            <span class="material-symbols-rounded">
+                              edit
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">#4</th>
+                          <td>Pharrell Murray</td>
+                          <td>pharrell.murray@mail.com</td>
+                          <td>Yes</td>
+                          <td>
+                            <span class="material-symbols-rounded">
+                            visibility
+                            </span>
+                            <span class="material-symbols-rounded">
+                              edit
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">#5</th>
+                          <td>Annika Mcbride</td>
+                          <td>annika.mcbride@mail.com</td>
+                          <td>Yes</td>
+                          <td>
+                            <span class="material-symbols-rounded">
+                            visibility
+                            </span>
+                            <span class="material-symbols-rounded">
+                              edit
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">#6</th>
+                          <td>Fatimah Clark</td>
+                          <td>fatimah.clark@mail.com</td>
+                          <td>Yes</td>
+                          <td>
+                            <span class="material-symbols-rounded">
+                            visibility
+                            </span>
+                            <span class="material-symbols-rounded">
+                              edit
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">#7</th>
+                          <td>Klaudia Rhodes</td>
+                          <td>klaudia.rhodes@mail.com</td>
+                          <td>Yes</td>
+                          <td>
+                            <span class="material-symbols-rounded">
+                            visibility
+                            </span>
+                            <span class="material-symbols-rounded">
+                              edit
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">#8</th>
+                          <td>Tillie Lucero</td>
+                          <td>tillie.lucero@mail.com</td>
+                          <td>Yes</td>
+                          <td>
+                            <span class="material-symbols-rounded">
+                            visibility
+                            </span>
+                            <span class="material-symbols-rounded">
+                              edit
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">#9</th>
+                          <td>Sabrina Stephenson</td>
+                          <td>sabrina.stephenson@mail.com</td>
+                          <td>Yes</td>
+                          <td>
+                            <span class="material-symbols-rounded">
+                            visibility
+                            </span>
+                            <span class="material-symbols-rounded">
+                              edit
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">#10</th>
+                          <td>Annie Smith</td>
+                          <td>annie.smith@mail.com</td>
+                          <td>Yes</td>
+                          <td>
+                            <span class="material-symbols-rounded">
+                            visibility
+                            </span>
+                            <span class="material-symbols-rounded">
+                              edit
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <nav aria-label="Page navigation example ">
+                      <ul class="pagination justify-content-end">
+                        <li class="page-item">
+                          <a class="page-link text-success" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item"><a class="page-link text-success" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link text-success" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link text-success" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link text-success" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <div class="modal fade" id="tr1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-body p-2rem">
+                              <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <img src="./assets/images/emir.jpeg" alt="admin-avatar">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                  <div class="d-flex justify-content-between">
+                                    <div><span>#1</span></div>
+                                    <div>
+                                      <button 
+                                        type="button" 
+                                        class="btn-close" 
+                                        data-bs-dismiss="modal" 
+                                        aria-label="Close">
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <p class="fontsize-2 mb-0">Admin</p>
+                                  <h1 class="fontsize-1 mb-2">Emir Wicks</h1>
+                                  <p class="fontsize-4 mb20">emir.wicks@mail.com</p>
+                                  <div class="d-flex justify-content-between">
+                                    <div><span class="email-fontsize">Verified</span></div>
+                                    <div data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                      <span class="material-symbols-rounded arrow-down">
+                                        keyboard_arrow_down
+                                        </span>
+                                      <span class="material-symbols-rounded arrow-up">
+                                          keyboard_arrow_up
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>  
+                                
+                            </div>
+                          </div>
+                          <div class="modal-footer border-top-0 collapse p-0 padding-r-32 padding-b-32"  id="collapseExample">
+                            <button type="button" class="btn btn-outline-success btn-lg" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-success btn-lg">Add</button>
+                          </div> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="tab-pane fade" id="Setting" role="tabpanel" aria-labelledby="nav-Settings">Setting</div>
 
               </div>
