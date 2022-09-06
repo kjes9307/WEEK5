@@ -47,15 +47,11 @@ body{
 .ml50{
     margin-left: 50px;
 }
-.mb44{
-    margin-bottom: 44px ;
-}
+
 .mb63{
     margin-bottom: 63px !important;
 }
-.padding-0{
-    padding: 0px !important;
-}
+
 .padding-y-32{
     padding-top: 32px !important;
     padding-bottom: 32px !important;
@@ -77,9 +73,7 @@ body{
     padding-top: 7px !important;
     padding-bottom: 7px !important;
 }
-.border-fix{
-    border-bottom: 1px solid #dee2e6;
-}
+
 .answer-logo{
     background-image: url('../images/logo-ANSWER.svg');
     background-position: center center;
@@ -87,6 +81,12 @@ body{
     background-repeat: no-repeat;
     height: 40px;
     width: 155px;
+    .logo-link{
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+    }
 }
 .logo{
     background-image: url('../images/andychen.jpeg');
@@ -120,10 +120,7 @@ body{
     height: 800px;
     padding: 32px;
 }
-.padding-0{
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
+
 
 .arrow-down{
     display: none !important;
@@ -163,5 +160,22 @@ tbody{
         padding-bottom: 12px !important;
         padding-top: 12px !important;
         line-height: 24px !important;
+    }
+}
+
+.nav{
+    position: fixed;
+    min-width: 200px;
+    min-height: 100vh;
+}
+.icon-click{
+    &:hover{
+        cursor: pointer
+    }
+}
+.page-link{
+    &:focus{
+        background: #198754;
+        color: #fff !important;
     }
 }

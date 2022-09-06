@@ -17,15 +17,6 @@ a {
   text-decoration: none;
 }
 
-.custom-container {
-  width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: left;
-}
-
 .fontsize-1 {
   font-size: 24px;
   line-height: 33px;
@@ -82,16 +73,8 @@ body {
   margin-left: 50px;
 }
 
-.mb44 {
-  margin-bottom: 44px;
-}
-
 .mb63 {
   margin-bottom: 63px !important;
-}
-
-.padding-0 {
-  padding: 0px !important;
 }
 
 .padding-y-32 {
@@ -121,10 +104,6 @@ body {
   padding-bottom: 7px !important;
 }
 
-.border-fix {
-  border-bottom: 1px solid #dee2e6;
-}
-
 .answer-logo {
   background-image: url("../images/logo-ANSWER.svg");
   background-position: center center;
@@ -132,6 +111,13 @@ body {
   background-repeat: no-repeat;
   height: 40px;
   width: 155px;
+}
+
+.answer-logo .logo-link {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
 }
 
 .logo {
@@ -170,11 +156,6 @@ body {
 .h-800 {
   height: 800px;
   padding: 32px;
-}
-
-.padding-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
 }
 
 .arrow-down {
@@ -217,5 +198,20 @@ tbody td, tbody th {
   padding-bottom: 12px !important;
   padding-top: 12px !important;
   line-height: 24px !important;
+}
+
+.nav {
+  position: fixed;
+  min-width: 200px;
+  min-height: 100vh;
+}
+
+.icon-click:hover {
+  cursor: pointer;
+}
+
+.page-link:focus {
+  background: #198754;
+  color: #fff !important;
 }
 /*# sourceMappingURL=index.css.map */
