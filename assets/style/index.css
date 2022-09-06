@@ -169,7 +169,7 @@ tbody td, tbody th {
   cursor: pointer; }
 
 .page-link:focus {
-  background: #198754;
+  background: #198754 !important;
   color: #fff !important; }
 
 /*!
