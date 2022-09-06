@@ -1,4 +1,8 @@
 // font-size
+
+$unitLength : 8px;
+$unitLineWidth: 1px ;
+$alphaBetSize : 8px;
 .fontsize-1{
     font-size: $alphaBetSize*3;
     line-height: 33px;
@@ -175,7 +179,7 @@ tbody{
 }
 .page-link{
     &:focus{
-        background: #198754;
+        background: #198754 !important;
         color: #fff !important;
     }
 }
